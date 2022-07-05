@@ -8,7 +8,7 @@ s.summary = "RWPickFlavor lets a user select an ice cream flavor."
 s.requires_arc = true
 
 # 2
-s.version = "2.4.1"
+s.version = "2.4.2"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -25,7 +25,6 @@ s.source = { :git => "https://github.com/skaz2/RWPickFlavor.git", :tag => "#{s.v
 # 7
 s.framework = "UIKit"
 s.dependency 'Alamofire', '~> 5.6.1'
-s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
 s.source_files = "RWPickFlavor/**/*.{swift}"
