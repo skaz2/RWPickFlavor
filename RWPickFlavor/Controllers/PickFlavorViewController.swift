@@ -99,17 +99,17 @@ public class PickFlavorViewController: UIViewController {
   }
   
   private func selectFirstFlavor() {
-    if let flavor = flavors.first {
-      updateWithFlavor(flavor)
-    }
+//    if let flavor = flavors.first {
+//      updateWithFlavor(flavor)
+//    }
   }
   
   // MARK: Internal
   private func updateWithFlavor(_ flavor: Flavor) {
-    iceCreamView.updateWithFlavor(flavor)
-    label.text = flavor.name
+//    iceCreamView.updateWithFlavor(flavor)
+//    label.text = flavor.name
   }
-}
+//}
 
 // MARK: UICollectionViewDelegate
 extension PickFlavorViewController: UICollectionViewDelegate {

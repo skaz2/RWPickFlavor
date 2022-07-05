@@ -7,7 +7,7 @@ s.name = "RWPickFlavor"
 s.summary = "RWPickFlavor lets a user select an ice cream flavor."
 
 # 2
-s.version = "2.4.8"
+s.version = "2.4.9"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
