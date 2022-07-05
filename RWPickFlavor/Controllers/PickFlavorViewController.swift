@@ -27,7 +27,7 @@
 /// THE SOFTWARE.
 
 import UIKit
-import Alamofire
+//import Alamofire
 //import MBProgressHUD
 
 public class PickFlavorViewController: UIViewController {
@@ -63,29 +63,29 @@ public class PickFlavorViewController: UIViewController {
     
 //    showLoadingHUD()
     
-    Alamofire.request("https://www.raywenderlich.com/downloads/Flavors.plist",
-                      encoding: PropertyListEncoding.xml)
-      .responsePropertyList { [weak self] (response) -> Void in
-        
-        guard let self = self else {
-          return
-        }
+//    Alamofire.request("https://www.raywenderlich.com/downloads/Flavors.plist",
+//                      encoding: PropertyListEncoding.xml)
+//      .responsePropertyList { [weak self] (response) -> Void in
+//
+//        guard let self = self else {
+//          return
+//        }
         
 //        self.hideLoadingHUD()
         
-        let flavorsArray: [[String : String]]
-        
-        switch response.result {
-        case .success(let array):
-          flavorsArray = array as? [[String : String]] ?? []
-        case .failure(_):
-          print("Couldn't download flavors!")
-          return
-        }
-        
-        self.flavors = flavorsArray.compactMap(Flavor.init(dictionary:))
-        self.collectionView.reloadData()
-        self.selectFirstFlavor()
+//        let flavorsArray: [[String : String]]
+//        
+//        switch response.result {
+//        case .success(let array):
+//          flavorsArray = array as? [[String : String]] ?? []
+//        case .failure(_):
+//          print("Couldn't download flavors!")
+//          return
+//        }
+//        
+//        self.flavors = flavorsArray.compactMap(Flavor.init(dictionary:))
+//        self.collectionView.reloadData()
+//        self.selectFirstFlavor()
     }
   }
   
